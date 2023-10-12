@@ -152,7 +152,7 @@ The following guides illustrate how to use some features concretely:
 
 ### Como Rodar localmente
 ```
-$ mvn clean spring-boot:run
+$ mvn install
 $ docker build -t fabiopereira/desafiopicpay .   
 $ docker run -p 8080:8080 fabiopereira/desafiopicpay .
 ```
