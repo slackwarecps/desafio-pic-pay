@@ -154,7 +154,13 @@ The following guides illustrate how to use some features concretely:
 ```
 $ mvn install
 $ docker build -t fabiopereira/desafiopicpay .   
-$ docker run -p 8080:8080 fabiopereira/desafiopicpay .
+$ docker run -p 8080:8080 fabiopereira/desafiopicpay
 ```
 
+### Como Testar
+```
+curl --request GET \
+--url http://localhost:9000/users \
+--header 'Content-Type: application/json'
+```
 
