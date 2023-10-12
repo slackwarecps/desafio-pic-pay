@@ -159,8 +159,21 @@ $ docker run -p 8080:8080 fabiopereira/desafiopicpay
 
 ### Como Testar
 ```
+curl --request POST \
+  --url http://localhost:8080/users \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"firstName" : "Fabio 2",
+	"lastName" : "Pereira",
+	"password" : "admin123kkk",
+	"document" : "123456789",
+	"email" : "fabio@email.com",
+	"userType" : "COMMON",
+	"balance" : 10
+}'
+
 curl --request GET \
---url http://localhost:9000/users \
+--url http://localhost:8080/users \
 --header 'Content-Type: application/json'
 ```
 
